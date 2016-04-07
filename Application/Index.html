@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<!-- Declaring the AngularJS Module-->
+<html ng-app="westApp">                
+
+    <head>
+        <title>Login In Portal</title>
+     
+     <!--AngularJS Script and CSS Link.Bootstrap and Angular UI Github link for buttons -->
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.js"></script>
+     <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.1.2.js"></script>
+     
+     <link rel="stylesheet" type="text/css" href="CSS/yourCostumCSS.css">
+       
+      <!--Module and Cotroller scipt link-->  
+                <!--Module and Cotroller scipt link-->  
+     <script src="https://platform.twitter.com/widgets.js"></script>
+     <script src="JS/applicationModule.js"></script> 
+     <script src="JS/Controllers.js"></script>
+     
+       
+           </head>
+            
+         
+           
+        <header ng-controller="LoginController">
+            <img src="Images/western Eng Logo.png" style="width:500px;vertical-align: middle" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b><i>ECE 9065B</i></b>
+            <button  class="LoginButton" ng-click="logout()" style="float: right;clear: left"><img src="../Images/google signout (2).png" height="90" width="150"></button>
+        </header>    
+           
+         <body class="welcome">
+             <!-- The Dropdown Menu for View Selection -->
+               <div class="dropdown">
+                 <ul>
+                     <li class="d2"><a href="#">Select an Option</a><span class="droparrow">&#9660;</span>
+                     <ul>
+                          <li><a ui-sref="Index.posting">POST</a></li> 
+                         <li><a ui-sref="Index.posttracking">PREVIOUS POSTS</a></li>   
+                 <!--         <li><a ui-sref="Index.Specific">Specific Posting</a></li> -->
+                     </ul>
+                     </li>
+                  </ul>
+                </div> 
+                
+            
+           
+           
+               <h4 class="info1">{{name}}</h4>
+               <h4 class="info2">{{email}}</h4>
+              <h6 class="info3"><img src="{{image}}" height="90" width="90"></h6> 
+            
+           
+          </div>
+            
+            
+            
+            <!--Defining the Angular JS  view Area -->
+            
+            
+          
+             <div id="main"> 
+                     <ui-view class="viewarea"></ui-view>
+               </div>  
+               
+              
+           
+         </body>
+</html>
+        

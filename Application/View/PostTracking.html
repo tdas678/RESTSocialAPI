@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="westApp" ng-controller="TrackingController">
+    <head>
+        <title>ECE 9065B</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.js"></script>
+        <link rel="stylesheet" type="text/css" href="./CSS/yourCostumCSS.css">
+          <!--Module and Cotroller scipt link-->  
+     <script src="./JS/applicationModule.js"></script> 
+     <script src="./JS/Controllers.js"></script>
+    </head>
+    <body>
+       <section>
+               <h1 class="heading2">Previous Posts...Click on Post to Edit and Delete</h1>
+               
+               
+         <!--  <textarea style="height:40px; width:200px; placeholder="List Available tracked posts">{{post.text}}</textarea> 
+         <div class="trackPost">
+             {{post.text}}
+         <button>Delete</button></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <br>
+               <br>  -->
+               
+         <!--      <div class="trackPost">
+                   <ul id="comment" ng-repeat="post in posts" ng-click="postD(post)">
+            {{post.text}}
+                  </ul><br>
+                  <button value="comments" ng-click="comment()">comments</button>
+               </div>     -->
+               
+          
+                <div  class="trackpostDIV">    
+                 <table class="trackPostTable">
+                  <tr>
+                   <th>POST</th>
+                   <th>Facebook</th>
+                   <th>Twitter</th>
+                   <th>Linked IN</th>
+                   <th>Get your Comments</th>
+                   <th>See your Comments</th>
+                  </tr>
+                   <tr ng-repeat="post in posts">
+                    <td ng-click="postD(post)">{{post.text}}</td>
+                    <td style="background-color:#00bfff">{{post.facebook_flag}}</td>
+                    <td style="background-color: 	#00ffff">{{post.twitter_flag}}</td>
+                    <td style="background-color: #0080ff">{{post.linkedin_flag}}</td>
+                    
+                     <td><button class="btnt" type="button" ng-click="comment(post)">GET Comments</button></td> <td><button class="btnt" type="button" ng-click="seeComment(post)">See Comments</button></td>
+                   </tr>
+               </table>
+               </div>
+                   
+               
+           </section>
+           
+    </body>
+</html>

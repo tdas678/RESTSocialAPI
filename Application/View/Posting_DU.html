@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="westApp">
+    <head>
+        <title>Login In Portal</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
+          <!--Module and Cotroller scipt link-->  
+     <script src="./JS/applicationModule.js"></script> 
+     <script src="./JS/Controllers.js"></script>
+     
+          
+     </head>
+            
+            
+       
+            
+    <body ng-controller="deleteUpdateController">
+          <section class="section01">
+               <h1 class="heading1">Post Update and Delete</h1>
+                     
+              <textarea ng-model="message"  style="height:150px; width:250px">{{message}}</textarea>
+               <br>
+               <br>
+               &nbsp;&nbsp;&nbsp<input type="button" value="Update Post" ng-click="updatePost()" style="background-color:lightblue" />&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Delete Post" ng-click="deletePost()" style="background-color:lightblue"/>
+            
+            
+           </section>
+         
+             
+                 </body>            
+</html>

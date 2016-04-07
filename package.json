@@ -1,0 +1,28 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "author": "Tanushree Das",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "mongoose": "^4.4.10",
+    "node-twitter-api": "^1.7.0",
+    "oauth": "^0.9.14",
+    "passport": "^0.3.2",
+    "passport-twitter-token": "^1.1.1",
+    "querystring": "^0.2.0",
+    "request": "^2.69.0",
+    "twitter": "^1.2.5"
+  }
+}

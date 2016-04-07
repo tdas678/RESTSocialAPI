@@ -1,0 +1,346 @@
+
+
+header {
+                  background-color: lightblue;
+                  min-width:100%;
+                  display:inline-block;
+}
+
+                
+.welcome {
+
+                background: url("../Images/wallpaper_2.jpg")no-repeat center center fixed;
+                background-size:cover;
+}
+
+.heading1{
+    
+ position:fixed;
+ top:90px;
+ left:700px;
+ font-style:normal;
+ color:#ff0066;
+}
+
+
+.heading2{
+    
+ position:fixed;
+ top:90px;
+ left:580px;
+ font-style: normal;
+ color:#ff0066;
+    
+}
+.viewarea{
+    
+ 
+    top:150px;
+}
+
+.aside1{
+  
+ position:fixed;
+ top:600px;
+ left:520px;
+}
+
+.aside2{
+  
+ position:fixed;
+ top:580px;
+ left:520px;
+}
+
+
+.dropdown ul{
+    
+    list-style:none;
+    
+    
+}
+
+.dropdown ul li a{
+    text-decoration:none;
+    color:white;
+}
+
+.dropdown ul li{
+    
+    position:relative;
+    background-color:#000000;
+    height:50px;
+    width:150px;
+    text-align:left;
+    padding-left:10px;
+    line-height:50px;
+    clear:both;
+    
+    
+    
+}
+
+.dropdown ul ul li a{
+    
+    text-decoration:none;
+    
+}
+
+.dropdown ul ul li:hover{
+    
+    text-decoration:none;
+    background-color:orange;
+    
+    
+}
+.dropdown ul ul{
+    
+    display:none;
+    position: absolute;
+    right: 0;
+}
+
+
+.dropdown ul li:hover > ul 
+{
+    display:block;
+    
+}
+
+.droparrow{
+    font-size:11px;
+    line-height:0%;
+    color:white;
+    position:relative;
+    padding-left:20px;
+}
+
+.btn1
+{
+    height:40px;
+    width:150px;
+    padding:5px;
+    border-radius:2px;
+    color:white;
+    font-family:verdana;
+    background-color:blue;
+    
+}
+
+.btn2
+{
+    height:40px;
+    width:150px;
+    padding:5px;
+    border-radius:2px;
+    color:white;
+    font-family:verdana;
+    background-color:lightblue;
+}
+
+.btn3
+{
+    height:40px;
+    width:150px;
+    padding:5px;
+    border-radius:2px;
+    color:white;
+    font-family:verdana;
+    background-color:black;
+}
+
+.info1{
+    color:#9900cc; 
+    position:fixed;
+    top:120px;
+    left:683px; 
+    font-style: normal;
+}
+
+.info2{
+    color:#9900cc; 
+    position:fixed;
+    top:140px;
+    left:680px; 
+    font-style: normal;
+}
+
+
+.info3{
+    
+    position:fixed;
+    top:180px;
+    left:700px; 
+
+}
+
+.viewarea{
+    
+    position:fixed;
+    top:330px;
+    left:560px;
+}
+
+
+.trackPost{
+    
+  
+  background-color:transparent;
+  clear:both;
+  position:fixed;
+  top:350px;
+  left:500px;
+  border: 3px solid #73AD21;
+ 
+  
+  
+}
+
+
+.trackPost ul{
+    
+  display:block;
+  margin: auto;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-size: 20px;
+
+  
+}
+
+.trackPost ul:hover{
+    
+  background-color:lightblue;
+  font-size: 30px;
+}
+
+.comenthead
+{
+    
+   font-weight: bold;
+  font-size  : 1em;
+  line-height: 150%;
+  font-family: sans-serif;
+  font-style:normal;
+   
+    
+}
+
+.trackPostTable{
+
+border-collapse:collapse;
+width:100%;
+text-align: left;
+padding: 10px;
+font-style:normal;
+
+    
+}
+
+.trackPostDIV{
+ height:500px;
+ width:800px;
+ overflow-y:auto;
+ left:500px;
+ 
+}
+
+.trackPostTable td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+}
+.trackPostTable tr:nth-child(even){
+   background-color: #ffffcc;
+   font-style: italic;
+   
+   
+    
+}
+
+.trackPostTable tr:nth-child(odd){
+   background-color: #ffffb3;
+   font-style: italic;
+    
+}
+.commentCSS ul{
+   list-style:none;
+    
+}
+
+.commentCSS li{
+   font-family: arial;
+   font-style:normal;
+   background-color:lightblue;
+    
+  display:block;
+  margin: auto;
+  margin: 0;
+  padding: 0;
+    
+}
+
+.btnt{
+    
+   background-color: lightblue; color: black;
+    border: none;
+    
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.LoginButton{
+    
+     background-color: lightblue; color: white;
+     border: none;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+.traccommentTable{
+    
+border-collapse:collapse;
+width:100%;
+text-align: left;
+padding: 8px;
+font-style:normal;
+ background-color: #eceff3;
+ border:1px solid blue;
+    
+}
+
+.postClass{
+    
+  background-color: #ffffb3;
+  font:bold;
+  }
+  
+.postClass:focus{
+    
+  border:1px solid red;
+ 
+ }
+ 
+.postClass:placeholder{
+    font-weight: bold;
+}
+
+
+.Heading6{
+    
+ position:fixed;
+ top:700px;
+ left:580px;   
+ font:bold;
+ font-style: normal;
+  color:#ff0066;
+ 
+}

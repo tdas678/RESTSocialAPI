@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html ng-app="westApp" itemscope itemtype="http://schema.org/Article">
+    
+    <head>
+        <title>Login In Portal</title>
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="https://apis.google.com/js/client:platform.js?onload=start" async defer></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+                  <!--Module and Cotroller scipt link-->  
+     <script src="https://platform.twitter.com/widgets.js"></script>
+         <script>
+    function start() {
+      gapi.load('auth2', function() {
+        auth2 = gapi.auth2.init({
+          client_id: '587593954715-0eht73ffia54el7vt7gg5gjpttp5one3.apps.googleusercontent.com'
+        });
+      });
+    }
+  </script>
+        <script src="JS/applicationModule.js"></script>
+        <script src="JS/Controllers.js"></script>
+        <link rel="stylesheet" type="text/css" href="CSS/yourCostumCSS.css">
+     
+  
+        
+    </head>
+    
+        <header ng-controller="LoginController" ng-hide="HIDE">
+           
+            <img  src="../Images/western Eng Logo.png" style="width:500px;vertical-align: middle" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b><i>ECE 9065B<i><b>
+            <button id="signinButton" class="LoginButton" ng-click="login()" style="float: right;clear: left"><img src="../Images/googlebutton.png" height="90" width="150"></button>
+            
+        </header>
+    <body class="welcome">
+                    <ui-view></ui-view>
+        </body>
+               
+        
+</html>

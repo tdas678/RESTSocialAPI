@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="westApp">
+    <head>
+        <title>Login In Portal</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./CSS/yourCostumCSS.css">
+          <!--Module and Cotroller scipt link-->  
+     <script src="https://platform.twitter.com/widgets.js"></script>
+     <script src="./JS/applicationModule.js"></script> 
+     <script src="./JS/Controllers.js"></script>
+     
+
+          
+     </head>
+            
+            
+       
+            
+    <body>
+          <section class="section01" ng-controller="LoginController">
+               <h1 class="heading1">Posting</h1>
+                 
+             <textarea class="postClass" ng-model="message" placeholder="Enter your Post" style="height:150px; width:400px"></textarea>
+             <br>
+               <br>
+            <!--   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button"  value="Create Post" ng-click="postCapture()" style="background-color:lightblue" /> -->
+             
+               
+               
+             <!--Aside Content for button and Checkbox-->
+               
+                <aside class="aside1" ng-controller="LoginController">
+                  <table>
+                      <tr>
+                     <td><button type="button"   class="btn1" ng-model="fb" ng-click="facebookLogin(message)" uib-btn-checkbox btn-checkbox-true="media" btn-checkbox-false="0">Facebook</button></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                     <td><button type="button"  class="btn2" ng-model="twitter"  ng-click="twitterLogin(message)"uib-btn-checkbox btn-checkbox-true="media" btn-checkbox-false="0">Twitter</button></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <td><button type="button"  class="btn3" ng-model="linkedin" ng-click="linkedinLogin(message)" uib-btn-checkbox btn-checkbox-true="media" btn-checkbox-false="0">Linked In</button></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                   </tr>
+               </table>
+               </aside>
+           </section>
+           <p class="Heading6">Select the desired Social Media to Post</p>
+             
+                 </body>            
+</html>

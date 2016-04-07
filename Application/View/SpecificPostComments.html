@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="westApp">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body ng-controller="commentsController">
+       <section class="section02">
+              <!-- <h1 class="heading1">{Post Title}</h1><br>
+               <h1 class="heading2">Comments</h1>  -->
+               
+               <h1 class="comenthead">Your Post: {{message}}</h1>
+             <!--  <textarea style="height:250px; width:250px;overflow-y:scroll" placeholder="List Available tracked posts">{{comment}}</textarea> 
+             <div class="commentCSS">
+             <ul ng-repeat="comment in commentPost">
+                 <li>{{comment.comment}}</li><li>{{comment.created_on}}</li> -->
+                 </ul>
+               </div>
+          <!--    <input type="text" ng-model="newcomment"></input><button ng-click="AddComment(newcomment)">AddComment</button><br><br><br> -->
+              <div class="traccommentTable" ng-repeat="comment in commentPost"> 
+			<p>{{comment.comment}}</p>
+		<!--	<small>created on {{comment.facebook_created_on | date:"h:mma 'on' MMM d, y"}}</small> -->
+		
+		</div>
+               
+           </section>
+           
+    </body>
+</html>
